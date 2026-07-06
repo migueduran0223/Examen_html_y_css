@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UberX × SpaceX | Settings</title>
+  <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand-card">
+        <a href="home.html" class="icon-button">←</a>
+        <div>
+          <p class="eyebrow">Settings</p>
+          <h1>Ajustes visuales</h1>
+        </div>
+      </div>
+      <nav class="page-nav">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="travel.html" class="nav-link">Travel</a>
+        <a href="payment-methods.html" class="nav-link">Pagos</a>
+        <a href="receipt.html" class="nav-link">Recibo</a>
+        <a href="settings.html" class="nav-link is-active">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="panel-card panel-settings">
+        <div class="panel-header">
+          <h2>Personaliza tu experiencia</h2>
+          <span class="badge">Controles visuales</span>
+        </div>
+
+        <div class="settings-grid">
+          <div class="setting-card">
+            <div class="setting-labels">
+              <strong>Modo oscuro / claro</strong>
+              <span class="text-muted">Activa un estilo de alto contraste.</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked />
+              <span class="toggle-track">
+                <span class="toggle-thumb"></span>
+              </span>
+            </label>
+            <p class="setting-hint">Desliza el interruptor para cambiar el modo.</p>
+          </div>
+
+          <div class="setting-card">
+            <div class="setting-labels">
+              <strong>Idioma</strong>
+              <span class="text-muted">Selecciona tu preferencia.</span>
+            </div>
+            <div class="radio-grid">
+              <label class="radio-option">
+                <input type="radio" name="settings-language" checked />
+                <span>Español</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="settings-language" />
+                <span>English</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="settings-language" />
+                <span>Português</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="setting-card">
+            <div class="setting-labels">
+              <strong>Tamaño de texto</strong>
+              <span class="text-muted">Ajusta el eje visual dentro de la app.</span>
+            </div>
+            <div class="range-wrapper">
+              <input type="range" min="10" max="90" value="42" />
+              <div class="range-labels">
+                <span>Pequeño</span>
+                <span>Grande</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

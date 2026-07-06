@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UberX × SpaceX | Payment Methods</title>
+  <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand-card">
+        <a href="home.html" class="icon-button">←</a>
+        <div>
+          <p class="eyebrow">Payment Methods</p>
+          <h1>Métodos de pago</h1>
+        </div>
+      </div>
+      <nav class="page-nav">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="travel.html" class="nav-link">Travel</a>
+        <a href="payment-methods.html" class="nav-link is-active">Pagos</a>
+        <a href="receipt.html" class="nav-link">Recibo</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="panel-card panel-payment-methods">
+        <div class="panel-header">
+          <h2>Elige tu método visualmente</h2>
+        </div>
+        <div class="search-field">
+          <input type="search" placeholder="Search payment methods" aria-label="Search payment methods" />
+        </div>
+        <div class="selectable-grid payment-options">
+          <div class="choice-card">
+            <input type="radio" id="pay-amex" name="payment-method" checked />
+            <label for="pay-amex">
+              <div class="payment-logo">
+                <img src="/assets/imagenes/tarjeta.jpg" alt="Johan Ramos">
+              </div>
+              <div>
+                <strong>•••• 1234</strong>
+                <span>Expires 12/25</span>
+              </div>
+              <span class="badge badge-default">Default</span>
+            </label>
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="nequi" name="payment-method" />
+            <label for="nequi">
+              <div class="payment-logo">
+                <img src="/assets/imagenes/nequi.png" alt="Johan Ramos">
+              </div>
+              <div>
+                <strong>•••• 5678</strong>
+                <span>Expires 01/26</span>
+              </div>
+              <div class="payment-actions">✏️ 🗑️</div>
+            </label>
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="pay-paypal" name="payment-method" />
+            <label for="pay-paypal">
+              <div class="payment-logo">
+                <img src="/assets/imagenes/paypal.png" alt="Johan Ramos">
+              </div>
+              <div>
+                <strong>PayPal</strong>
+                <span>Linked account</span>
+              </div>
+              <div class="payment-actions">✏️ 🗑️</div>
+            </label>
+          </div>
+        </div>
+        <button class="button button-primary button-full">Add New Method</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

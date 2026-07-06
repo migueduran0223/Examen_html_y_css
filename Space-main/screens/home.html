@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UberX × SpaceX | Home</title>
+  <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand-card">
+        <div class="brand-logo">
+            <img src="/assets/imagenes/salute-buzz.gif" alt="brand-logo">
+        </div>
+        <div>
+          <p class="eyebrow">UberX × SpaceX</p>
+          <h1>Inicio</h1>
+        </div>
+      </div>
+      <nav class="page-nav">
+        <a href="home.html" class="nav-link is-active">Home</a>
+        <a href="travel.html" class="nav-link">Travel</a>
+        <a href="payment-methods.html" class="nav-link">Pagos</a>
+        <a href="receipt.html" class="nav-link">Recibo</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="panel-card panel-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Bienvenido a tu viaje espacial</p>
+          <h2>Elige tu próximo destino</h2>
+          <p> "Es un pequeño paso para un hombre, pero un gran salto para la humanidad"</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="travel.html" target="_blank">Seleccionar viaje</a>
+            <a class="button button-secondary" href="payment-methods.html" target="_blank">Ver métodos</a>
+          </div>
+        </div>
+        <div class="hero-visual hero-visual-home">
+             <img src="/assets/imagenes/home.jpg" alt="Johan_Ramos" class="hero-visual-home">
+        </div>
+      </section>
+
+      <section class="panel-card panel-destinations">
+        <div class="panel-header">
+          <h3>Destinos disponibles</h3>
+          <span class="badge">Selecciona uno</span>
+        </div>
+        <div class="selectable-grid">
+          <div class="choice-card">
+            <input type="radio" id="home-earth" name="home-destination" checked />
+            <label for="home-earth">
+              <img src="/assets/imagenes/tierra.gif" alt="tierra" />
+              <div>
+                <strong>Tierra</strong>
+                <span>URL: Earth</span>
+              </div>
+            </label>
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="home-mars" name="home-destination" />
+            <label for="home-mars">
+              <img src="/assets/imagenes/marte.gif" alt="Marte" />
+              <div>
+                <strong>Marte</strong>
+                <span>URL: Mars</span>
+              </div>
+            </label>
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="home-iss" name="home-destination" />
+            <label for="home-iss">
+              <img src="/assets/imagenes/estacion.gif" alt="estacion" />
+              <div>
+                <strong>Estación</strong>
+                <span>Baja órbita</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

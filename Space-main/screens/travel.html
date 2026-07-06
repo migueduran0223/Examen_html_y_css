@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UberX × SpaceX | Travel</title>
+  <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand-card">
+        <a href="home.html" class="icon-button">←</a>
+        <div>
+          <p class="eyebrow">Travel</p>
+          <h1>Selecciona tu destino</h1>
+        </div>
+      </div>
+      <nav class="page-nav">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="travel.html" class="nav-link is-active">Travel</a>
+        <a href="payment-methods.html" class="nav-link">Pagos</a>
+        <a href="receipt.html" class="nav-link">Recibo</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="panel-card panel-map">
+        <div class="map-header">
+          <h2>Mapa Global</h2>
+          <p>Elige el destino y la nave para una reserva simulada.</p>
+        </div>
+        <div class="map-preview">
+          <div class="orbit-marker orbit-earth">Tierra</div>
+          <div class="orbit-path"></div>
+          <div class="orbit-marker orbit-mars">Marte</div>
+        </div>
+        <div class="selectable-grid travel-destinations">
+          <div class="choice-card">
+            <input type="radio" id="travel-earth" name="travel-destination" checked />
+            <label for="travel-earth">
+              <strong>Tierra</strong>
+              <span>Planeta origen</span>
+            </label>
+             <img src="/assets/imagenes/tierra.gif" alt="brand-logo">
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="travel-mars" name="travel-destination" />
+            <label for="travel-mars">
+              <strong>Marte</strong>
+              <span>Destino seleccionado</span>
+            </label>
+             <img src="/assets/imagenes/marte.gif" alt="brand-logo">
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="travel-iss" name="travel-destination" />
+            <label for="travel-iss">
+              <strong>Estación</strong>
+              <span>Low Earth Orbit</span>
+            </label>
+             <img src="/assets/imagenes/estacion.gif" alt="brand-logo">
+          </div>
+        </div>
+        <div class="panel-header" style="margin-top: 24px;">
+          <h2>Elige la nave</h2>
+          <span class="badge">Selección simulada</span>
+        </div>
+        <div class="selectable-grid travel-ships">
+          <div class="choice-card">
+            <input type="radio" id="ship-crew" name="travel-ship" checked />
+            <label for="ship-crew">
+              <strong>Crew Dragon</strong>
+              <span>48.5 token</span>
+            </label>
+             <img src="/assets/imagenes/nave1.jpg" alt="brand-logo">
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="ship-starliner" name="travel-ship" />
+            <label for="ship-starliner">
+              <strong>Starliner</strong>
+              <span>51.2 token</span>
+            </label>
+             <img src="/assets/imagenes/nave2.jpg" alt="brand-logo">
+          </div>
+          <div class="choice-card">
+            <input type="radio" id="ship-dream" name="travel-ship" />
+            <label for="ship-dream">
+              <strong>Dream Chaser</strong>
+              <span>102.5 token</span>
+            </label>
+             <img src="/assets/imagenes/nave3.jpg" alt="brand-logo">
+          </div>
+        </div>
+        <div class="bottom-sheet">
+          <div class="sheet-header">
+            <span class="sheet-label">Next Launch</span>
+            <span class="sheet-price">48.5</span>
+          </div>
+          <div class="sheet-body">
+            <div class="flight-card">
+              <input type="radio" id="launch-crew" name="next-launch" checked />
+              <label for="launch-crew">
+                <strong>Crew Dragon</strong>
+                <span>12/03/53 · 19:30</span>
+                <span>18 Days, 13 Hours</span>
+              </label>
+            </div>
+            <div class="flight-card">
+              <input type="radio" id="launch-starliner" name="next-launch" />
+              <label for="launch-starliner">
+                <strong>Starliner</strong>
+                <span>24/03/53 · 12:30</span>
+                <span>20 Days, 04 Hours</span>
+              </label>
+            </div>
+            <div class="flight-card">
+              <input type="radio" id="launch-dream" name="next-launch" />
+              <label for="launch-dream">
+                <strong>Dream Chaser</strong>
+                <span>24/03/53 · 12:30</span>
+                <span>23 Days, 09 Hours</span>
+              </label>
+            </div>
+          </div>
+          <div class="sheet-actions">
+            <button class="button button-secondary">Connect Wallet</button>
+            <a href="booking.html" class="button button-primary">Swipe To Confirm Your Booking</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
